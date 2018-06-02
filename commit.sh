@@ -1,1 +1,1 @@
-git add . && git commit -m "Commit" && git push && git push heroku master
+git add . && git commit -m "Commit" && git push
