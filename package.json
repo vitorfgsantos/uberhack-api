@@ -1,7 +1,7 @@
 {
-  "name": "taqe-api",
+  "name": "uberhack-api",
   "version": "1.0.0",
-  "description": "Projeto Taqe Api",
+  "description": "Projeto do Uberhack",
   "main": "server.js",
   "scripts": {
     "start": "node ./index.js",
@@ -9,8 +9,11 @@
     "seed": "node ./database/run.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "FCamara - Operações Críticas",
+  "author": "DreamTeam",
   "license": "ISC",
+  "engines": {
+    "node": "8.9.4"
+  },
   "dependencies": {
     "bcryptjs": "^2.3.0",
     "co": "^4.6.0",
