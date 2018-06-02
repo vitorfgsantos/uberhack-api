@@ -3,13 +3,15 @@
 const Router = require('koa-router');
 const RoutersController = require('./routers.controller');
 
+const ErrorService = require('../../../services/error.service');
+
 let router = new Router();
 
 router.get('/', function* () {
     try {
         this.body = yield RoutersController.getRouters(this);
     } catch (error) {
-        this.throw(error.message, 400);
+        ErrorService.handleError(this, error);
     }
 });
 
