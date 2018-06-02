@@ -1,0 +1,1 @@
+[ ![Codeship Status for fcamarabr/taqe-api](https://app.codeship.com/projects/1db17c90-51db-0134-b0ac-622f82587807/status?branch=master)](https://app.codeship.com/projects/171384)
