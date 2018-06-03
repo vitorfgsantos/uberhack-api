@@ -15,6 +15,9 @@ module.exports = function (server) {
     const parkingsRouter = require('./parkings/parkings.router');
     server.use(mount('/v1/parkings', parkingsRouter.routes()));
 
+    const heatareasRouter = require('./heatareas/heatareas.router');
+    server.use(mount('/v1/heatareas', heatareasRouter.routes()));
+
     // Protecting next routers with Authorization
     server.use(mount('/v1', oauthServer.authorise()));
 };
