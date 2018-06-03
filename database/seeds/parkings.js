@@ -11,7 +11,7 @@ module.exports = (companies) => (
                 free: 81,
                 total: 100
             },
-            cost: 10,
+            cost: 8,
             address: {
                 street: 'Av. Francisco Matarazzo',
                 number: 1705,
@@ -45,7 +45,7 @@ module.exports = (companies) => (
                 free: 60,
                 total: 100
             },
-            cost: 10,
+            cost: 11,
             address: {
                 street: 'Av. Pompéia',
                 number: 718,
