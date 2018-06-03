@@ -5,36 +5,38 @@ const Parking = require('../../src/models/parkingModel').Parking;
 module.exports = (companies) => (
     [
         new Parking({
-            name: 'Estacionamento Anhanguera',
+            name: 'Estacionamento Pameiras',
             lots: {
-                busy: 40,
-                free: 60,
+                busy: 19,
+                free: 81,
                 total: 100
             },
             cost: 10,
             address: {
-                street: 'Rua Eduardo Viviani',
-                number: 400,
-                district: 'Boa Vista',
-                city: 'Juiz de Fora',
-                state: 'MG'
-            }
+                street: 'Av. Francisco Matarazzo',
+                number: 1705,
+                district: 'Água Branca',
+                city: 'São Paulo',
+                state: 'SP'
+            },
+            coordinates: [-23.527737, -46.676030]
         }),
         new Parking({
-            name: 'Campinas Estacionamentos',
+            name: 'Estacionamento Anhaguera',
             lots: {
-                busy: 40,
-                free: 60,
+                busy: 10,
+                free: 90,
                 total: 100
             },
             cost: 10,
             address: {
-                street: 'Rua Eduardo Viviani',
-                number: 400,
-                district: 'Boa Vista',
-                city: 'Juiz de Fora',
-                state: 'MG'
-            }
+                street: 'R. Cotoxó',
+                number: 110,
+                district: 'Vila Pompeia',
+                city: 'São Paulo',
+                state: 'SP'
+            },
+            coordinates: [-23.527737, -46.676030]
         }),
         new Parking({
             name: 'Estacionamento Central',
@@ -45,11 +47,11 @@ module.exports = (companies) => (
             },
             cost: 10,
             address: {
-                street: 'Rua Aurora Tôrres',
-                number: 10,
-                district: 'Santa Luzia',
-                city: 'Juiz de Fora',
-                state: 'MG'
+                street: 'Av. Pompéia',
+                number: 718,
+                district: 'Vila Pompeia',
+                city: 'São Paulo',
+                state: 'SP'
             }
         }),
     ]
