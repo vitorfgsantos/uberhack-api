@@ -7,9 +7,17 @@ const ErrorService = require('../../../services/error.service');
 
 let router = new Router();
 
-router.get('/', function* () {
+router.get('/maps/:mode', function* () {
     try {
-        this.body = yield RoutersController.getRouters(this);
+        this.body = yield RoutersController.getRoutersByMaps(this);
+    } catch (error) {
+        ErrorService.handleError(this, error);
+    }
+});
+
+router.get('/uber', function* () {
+    try {
+        this.body = yield RoutersController.getRoutersByUber(this);
     } catch (error) {
         ErrorService.handleError(this, error);
     }

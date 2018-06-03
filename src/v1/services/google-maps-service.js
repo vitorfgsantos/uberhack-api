@@ -12,17 +12,13 @@ class GoogleMapsService {
         });
     }
 
-    async directions(ctx, params) {
-        let inOneHour = Math.round((new Date().getTime() + 60 * 60 * 1000) / 1000);
-
+    async directions(mode, params) {
         let response = await this.googleMapsClient.directions({
                 origin: params.origin,
                 destination: params.destination,
-                departure_time: inOneHour,
-                mode: 'transit',
-                alternatives: true,
+                mode: mode,
                 transit_mode: ['bus', 'rail'],
-                transit_routing_preference: 'fewer_transfers',
+                // transit_routing_preference: 'fewer_transfers',
             })
             .asPromise();
 
