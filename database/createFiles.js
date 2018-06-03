@@ -2,7 +2,7 @@
 
 const Grid = require('gridfs-stream');
 const fs = require('fs');
-const db = require('../db');
+const db = require('./db');
 const mime = require('mime');
 const gfs = new Grid(db.connection.db, db.mongo);
 

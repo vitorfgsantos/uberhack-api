@@ -12,6 +12,9 @@ module.exports = function (server) {
     const routersRouter = require('./routers/routers.router');
     server.use(mount('/v1/routers', routersRouter.routes()));
 
+    const parkingsRouter = require('./parkings/parkings.router');
+    server.use(mount('/v1/parkings', parkingsRouter.routes()));
+
     // Protecting next routers with Authorization
     server.use(mount('/v1', oauthServer.authorise()));
 };
